@@ -1,33 +1,33 @@
 
 /**
- * Write a description of class Course here.
+ * This course class represents information about the university courses.
+ * courses will have a course code and a course title.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Yousef Abobaker
+ * @version 1.0 17/10/2020
  */
 public class Course
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // instance variables
+    private String title;
+    
+    private String codeNumber;
 
     /**
      * Constructor for objects of class Course
+     * This is where course and code is stored
      */
-    public Course()
+    public Course(String title, String codeNumber)
     {
-        // initialise instance variables
-        x = 0;
+    this.title = title;
+    this.codeNumber = codeNumber;
     }
-
+    
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * This will print the course and the code number of the course.
      */
-    public int sampleMethod(int y)
+    public void print()
     {
-        // put your code here
-        return x + y;
+        System.out.println("Course: " + title + " " + codeNumber);
     }
 }

@@ -7,7 +7,7 @@ import java.util.*;
  * @author Michael Kölling and David Barnes
  * @version 2016.02.29
  * 
- * Modified by Derek
+ * Modified by Yousef Abobaker
  */
 public class Student
 {
@@ -19,6 +19,8 @@ public class Student
     
     // A BSc course has 120 credits, each module has 15 Credits
     private int credits;
+    
+    private Course course;
 
     /**
      * Create a new student with a given name and ID number.
@@ -82,10 +84,20 @@ public class Student
     }
     
     /**
+     * This method will add a course to the student which will show
+     * the course that the student has enrolled on.
+     */
+    public void courseEnroll(Course course)
+    {
+        this.course = course;
+    }
+    
+    /**
      * Print the student's name and ID number to the output terminal.
      */
     public void print()
     {
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
+        course.print();
     }
 }
