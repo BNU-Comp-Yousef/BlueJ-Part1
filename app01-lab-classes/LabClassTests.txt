@@ -25,3 +25,4 @@ Zach Neokli, student ID: 20488, credits: 20
 Khloe Headwards, student ID: 83011, credits: 20
 Jean Coronor, student ID: 00188, credits: 20
 Number of students: 3
+studentKhloe.changeName("Chloe Headwards");
