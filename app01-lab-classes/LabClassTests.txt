@@ -1,0 +1,27 @@
+LabClass co452Lab = new LabClass(3);
+Student studentZach = new Student("Zach Neokli", "20488");
+Student studentKhloe = new Student("Khloe Headwards", "83011");
+Student studentJean = new Student("Jean Coronor", "00188");
+co452Lab.enrollStudent(studentZach);
+co452Lab.enrollStudent(studentKhloe);
+co452Lab.enrollStudent(studentJean);
+co452Lab.setInstructor("Nicholas Day");
+co452Lab.setRoom("G100");
+co452Lab.setTime("Tuesday, 8am");
+studentZach.addCredits(20);
+studentKhloe.addCredits(20);
+studentJean.addCredits(20);
+studentZach.print();
+Zach Neokli, student ID: 20488, credits: 20
+studentKhloe.print();
+Khloe Headwards, student ID: 83011, credits: 20
+studentJean.print();
+Jean Coronor, student ID: 00188, credits: 20
+co452Lab.printList();
+Lab class Tuesday, 8am
+Instructor: Nicholas Day   Room: G100
+Class list:
+Zach Neokli, student ID: 20488, credits: 20
+Khloe Headwards, student ID: 83011, credits: 20
+Jean Coronor, student ID: 00188, credits: 20
+Number of students: 3
