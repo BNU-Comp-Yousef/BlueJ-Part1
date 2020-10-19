@@ -1,0 +1,14 @@
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+Ticket: Aylesbury Price: 220 Issued: Mon Oct 19 14:01:20 BST 2020
+Ticket ticket1 = new Ticket("Aylesbury" , 220);
+ticket1.print();
+Ticket: Aylesbury, Price: 220 Issued: Mon Oct 19 14:02:55 BST 2020
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+Ticket: Aylesbury, Price: 220 pence Issued: Mon Oct 19 14:05:39 BST 2020
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.printAllTickets();
+Ticket: Aylesbury, Price: 220 pence Issued: Mon Oct 19 14:56:47 BST 2020
+Ticket: Amersham, Price: 300 pence Issued: Mon Oct 19 14:56:47 BST 2020
+Ticket: High Wycombe, Price: 330 pence Issued: Mon Oct 19 14:56:47 BST 2020
