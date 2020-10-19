@@ -9,7 +9,7 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
- * Modified by Student Name
+ * Modified by Yousef Abobaker
  */
 public class TicketMachine
 {
@@ -24,6 +24,10 @@ public class TicketMachine
     
     private Ticket aylesburyTicket;
     
+    private Ticket amershamTicket;
+    
+    private Ticket highWycombeTicket;
+    
     /**
      * Create a machine that issues tickets of the given price.
      */
@@ -35,11 +39,15 @@ public class TicketMachine
         
         aylesburyTicket = new Ticket("Aylesbury", 220);
         
+        amershamTicket = new Ticket("Amersham", 300);
+        
+        highWycombeTicket = new Ticket("High Wycombe", 330);
+        
         issuedTicket = null;
     }
 
     /**
-     * @Return The price of a ticket.
+     * @Returns The price of a ticket.
      */
     public int getPrice()
     {
