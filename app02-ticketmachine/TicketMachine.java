@@ -31,20 +31,27 @@ public class TicketMachine
     /**
      * Create a machine that issues tickets of the given price.
      */
-    public TicketMachine(int cost)
+    public TicketMachine()
     {
-        price = cost;
         balance = 0;
         total = 0;
+        createTickets();      
         
+        issuedTicket = null;
+    }
+    
+    /**
+     * Made a new method to create new tickets.
+     */
+    private void createTickets()
+    {
         aylesburyTicket = new Ticket("Aylesbury", 220);
         
         amershamTicket = new Ticket("Amersham", 300);
         
         highWycombeTicket = new Ticket("High Wycombe", 330);
-        
-        issuedTicket = null;
     }
+        
 
     /**
      * @Returns The price of a ticket.
