@@ -1,25 +1,25 @@
 import java.util.Date;
 
 /**
- * Write a description of class Ticket here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * This class represents the tickets of the ticket machine for 
+ * the customer to have.
+ * @author Yousef Abobaker
+ * @version 1.1
  */
 public class Ticket
 {
-    // Attributes
+    // Attributes, fields, variables.
     
     private String destination;
-    
+    //price is set in pence.
     private int price;
     
     private Date issueDateTime;
     
     /**
      * Constructor for objects of class Ticket setting the
-     * desitnation and price.  The date will contain
-     * the current system date and time
+     * desitnation and price in pence. The date will contain
+     * the current system date and time.
      */
     public Ticket(String destination, int price)
     {
@@ -30,14 +30,15 @@ public class Ticket
     }
     
     /**
-     * 
+     * This method will print the ticket for the customer showing 
+     * the date, price and destination.
      */
     public void print()
     {
-        System.out.println("Ticket " + destination + 
-            " Price : " + price + 
-            " Issued " + issueDateTime);
+        System.out.println("Ticket: " + destination + 
+            "," + " Price: " + price + " pence" +
+            " Issued: " + issueDateTime);
     }
-    
+    //end of class
 
 }
