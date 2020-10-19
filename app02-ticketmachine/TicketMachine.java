@@ -35,7 +35,8 @@ public class TicketMachine
     {
         balance = 0;
         total = 0;
-        createTickets();      
+        createTickets();
+        
         
         issuedTicket = null;
     }
@@ -52,13 +53,15 @@ public class TicketMachine
         highWycombeTicket = new Ticket("High Wycombe", 330);
     }
     
-    //start of methods to add coins.
+     //start of methods to add coins.
     /**
      * created a method to add 10p (pence)
      */
     public void add10p()
     {
         balance = balance + 10;
+        System.out.println("10 pence has been added. The balance is now: "
+                          + balance + " " + "pence.");
     }
     
     /**
@@ -67,6 +70,8 @@ public class TicketMachine
     public void add20p()
     {
         balance = balance + 20;
+        System.out.println("20 pence has been added. The balance is now: "
+                          + balance + " " + "pence.");
     }
     
     /**
@@ -75,6 +80,8 @@ public class TicketMachine
     public void add100p()
     {
         balance = balance + 100;
+        System.out.println("100 pence has been added. The balance is now: "
+                          + balance + " " + "pence.");
     }
     
     /**
@@ -83,9 +90,14 @@ public class TicketMachine
     public void add200p()
     {
         balance = balance + 200;
+        System.out.println("200 pence has been added. The balance is now: "
+                          + balance + " " + "pence.");
     }
-    //end of add money methods    
+    //end of add money methods
+       
 
+    
+    
     /**
      * @Returns The price of a ticket.
      */
