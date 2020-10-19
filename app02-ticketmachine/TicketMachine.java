@@ -133,4 +133,14 @@ public class TicketMachine
         balance = 0;
         return amountToRefund;
     }
+    
+    /**
+     * Print all available tickets.
+     */
+    public void printAllTickets()
+    {
+        aylesburyTicket.print();
+        amershamTicket.print();
+        highWycombeTicket.print();
+    }
 }
