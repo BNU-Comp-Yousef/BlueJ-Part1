@@ -51,7 +51,40 @@ public class TicketMachine
         
         highWycombeTicket = new Ticket("High Wycombe", 330);
     }
-        
+    
+    //start of methods to add coins.
+    /**
+     * created a method to add 10p (pence)
+     */
+    public void add10p()
+    {
+        balance = balance + 10;
+    }
+    
+    /**
+     * adds 20p (pence)
+     */
+    public void add20p()
+    {
+        balance = balance + 20;
+    }
+    
+    /**
+     * adds 100p (pence)
+     */
+    public void add100p()
+    {
+        balance = balance + 100;
+    }
+    
+    /**
+     * adds 200p (pence)
+     */
+    public void add200p()
+    {
+        balance = balance + 200;
+    }
+    //end of add money methods    
 
     /**
      * @Returns The price of a ticket.
