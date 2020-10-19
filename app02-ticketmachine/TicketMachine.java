@@ -15,6 +15,9 @@ public class TicketMachine
 {
     // The price of a ticket from this machine.
     private int price;
+    private int priceAylesbury;
+    private int priceAmesham;
+    private int priceHighWycombe;
     // The amount of money entered by a customer so far.
     private int balance;
     // The total amount of money collected by this machine.
@@ -36,6 +39,11 @@ public class TicketMachine
         balance = 0;
         total = 0;
         createTickets();
+        priceAylesbury = 220;
+        priceAmesham = 300;
+        priceHighWycombe = 330;
+        
+        
         
         
         issuedTicket = null;
@@ -55,7 +63,9 @@ public class TicketMachine
     
      //start of methods to add coins.
     /**
-     * created a method to add 10p (pence)
+     * The following methods will show money being added via coins and 
+     * printing the new balance after each coin is added.
+     * Adds 10p 
      */
     public void add10p()
     {
@@ -131,28 +141,27 @@ public class TicketMachine
                                amount);
         }
     }
+    
+    /**
+     * Print a ticket for each destination if enough money 
+     * has been inserted, and reduce the current balance by 
+     * the ticket price. Print an error message if more money is required.
+     */
 
     public void selectAylesburyTicket()
     {
         issuedTicket = aylesburyTicket;
-    }
-    
-    /**
-     * Print a ticket if enough money has been inserted, and
-     * reduce the current balance by the ticket price. Print
-     * an error message if more money is required.
-     */
-    public void printTicket()
-    {
+        int price = 220;
         if(balance >= price) 
         {
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
-            System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
+            System.out.println("# Ticket to Aylesbury");
+            System.out.println("# " + price + " pence.");
             System.out.println("##################");
-            System.out.println();
+            aylesburyTicket.print();
+            
 
             // Update the total collected with the price.
             total = total + price;
@@ -162,10 +171,70 @@ public class TicketMachine
         else 
         {
             System.out.println("You must insert at least: " +
-                               (price - balance) + " more cents.");
+                               (price - balance) + " more pence.");
                     
         }
     }
+    
+        public void selectAmershamTicket()
+    {
+        issuedTicket = amershamTicket;
+        int price = 300;
+        if(balance >= price) 
+        {
+            // Simulate the printing of a ticket.
+            System.out.println("##################");
+            System.out.println("# The BlueJ Line");
+            System.out.println("# Ticket to Amersham");
+            System.out.println("# " + price + " pence.");
+            System.out.println("##################");
+            amershamTicket.print();
+            
+
+            // Update the total collected with the price.
+            total = total + price;
+            // Reduce the balance by the price.
+            balance = balance - price;
+        }
+        else 
+        {
+            System.out.println("You must insert at least: " +
+                               (price - balance) + " more pence.");
+                    
+        }
+    }
+    
+    
+
+        public void selectHighWycombeTicket()
+    {
+        issuedTicket = highWycombeTicket;
+        int price = 330;
+        if(balance >= price) 
+        {
+            // Simulate the printing of a ticket.
+            System.out.println("##################");
+            System.out.println("# The BlueJ Line");
+            System.out.println("# Ticket to High Wycombe");
+            System.out.println("# " + price + " pence.");
+            System.out.println("##################");
+            highWycombeTicket.print();
+            
+
+            // Update the total collected with the price.
+            total = total + price;
+            // Reduce the balance by the price.
+            balance = balance - price;
+        }
+        else 
+        {
+            System.out.println("You must insert at least: " +
+                               (price - balance) + " more pence.");
+                    
+        }
+    }
+    
+    
 
     /**
      * Return the money in the balance.
@@ -176,6 +245,8 @@ public class TicketMachine
         int amountToRefund;
         amountToRefund = balance;
         balance = 0;
+        System.out.println("You have been refunded: " + amountToRefund +
+                " pence.");
         return amountToRefund;
     }
     
