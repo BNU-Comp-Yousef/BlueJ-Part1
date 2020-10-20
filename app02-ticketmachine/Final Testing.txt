@@ -1,8 +1,8 @@
 TicketMachine ticketMachine = new TicketMachine();
-ticketMachine.add100p();
-100 pence has been added. The balance is now: 100 pence.
 ticketMachine.add10p();
-10 pence has been added. The balance is now: 110 pence.
+10 pence has been added. The balance is now: 10 pence.
+ticketMachine.add100p();
+100 pence has been added. The balance is now: 110 pence.
 ticketMachine.add200p();
 200 pence has been added. The balance is now: 310 pence.
 ticketMachine.add20p();
@@ -13,7 +13,9 @@ ticketMachine.selectAmershamTicket();
 # Ticket to Amersham
 # 300 pence.
 ##################
-Ticket: Amersham, Price: 300 pence Issued: Mon Oct 19 17:44:06 BST 2020
+Ticket: Amersham, Price: 300 pence Issued: Tue Oct 20 12:57:11 BST 2020
+ticketMachine.selectAylesburyTicket();
+You must insert at least: 190 more pence.
 ticketMachine.add200p();
 200 pence has been added. The balance is now: 230 pence.
 ticketMachine.add200p();
@@ -28,19 +30,19 @@ ticketMachine.selectAylesburyTicket();
 # Ticket to Aylesbury
 # 220 pence.
 ##################
-Ticket: Aylesbury, Price: 220 pence Issued: Mon Oct 19 17:44:06 BST 2020
+Ticket: Aylesbury, Price: 220 pence Issued: Tue Oct 20 12:57:11 BST 2020
 ticketMachine.selectHighWycombeTicket();
 ##################
 # The BlueJ Line
 # Ticket to High Wycombe
 # 330 pence.
 ##################
-Ticket: High Wycombe, Price: 330 pence Issued: Mon Oct 19 17:44:06 BST 2020
+Ticket: High Wycombe, Price: 330 pence Issued: Tue Oct 20 12:57:11 BST 2020
 ticketMachine.refundBalance()
 You have been refunded: 280 pence.
     returned int 280
-ticketMachine.insertMoney(700);
+ticketMachine.insertMoney(900);
 ticketMachine.printAllTickets();
-Ticket: Aylesbury, Price: 220 pence Issued: Mon Oct 19 17:44:06 BST 2020
-Ticket: Amersham, Price: 300 pence Issued: Mon Oct 19 17:44:06 BST 2020
-Ticket: High Wycombe, Price: 330 pence Issued: Mon Oct 19 17:44:06 BST 2020
+Ticket: Aylesbury, Price: 220 pence Issued: Tue Oct 20 12:57:11 BST 2020
+Ticket: Amersham, Price: 300 pence Issued: Tue Oct 20 12:57:11 BST 2020
+Ticket: High Wycombe, Price: 330 pence Issued: Tue Oct 20 12:57:11 BST 2020
