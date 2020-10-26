@@ -17,6 +17,10 @@ public class Course
     private Module module2;
     private Module module3;
     private Module module4;
+    
+    private int finalMarks;
+    
+    private Grades finalGrade; 
 
     /**
      * Constructor for objects of class Course
