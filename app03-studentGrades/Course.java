@@ -60,6 +60,31 @@ public class Course
         }
     }
     
+    public Grades convertToGrade(int mark)
+    {
+     if((mark >= 0) && (mark < 40))
+     {
+         return Grades.F;
+        }
+        else if((mark >= 40) && (mark < 50))
+        {
+            return Grades.D;
+        }
+        else if((mark >= 50) && (mark < 60))
+        {
+            return Grades.C;
+        }
+        else if((mark >= 60) && (mark < 70))
+        {
+            return Grades.B;
+        }
+        else if((mark >=70) && (mark <= 100))
+        {
+            return Grades.A;
+        }
+        return Grades.X;
+    }
+    
     /**
      * This will print the course and the code number of the course.
      */
