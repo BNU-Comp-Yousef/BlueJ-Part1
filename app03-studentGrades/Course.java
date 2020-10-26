@@ -12,10 +12,14 @@ public class Course
     
     private String codeNumber;
     
+    
+    
     private Module module1;
     private Module module2;
     private Module module3;
     private Module module4;
+    
+    private int mark;
     
     private int finalMarks;
     
@@ -29,6 +33,7 @@ public class Course
     {
     this.title = title;
     this.codeNumber = codeNumber;
+    this.mark = mark;
     
     module1 = new Module("Application Development", "AD200");
     module2 = new Module("Programming Concepts", "PC452");
@@ -88,12 +93,21 @@ public class Course
         return Grades.X;
     }
     
-    public void finalGrade()
+    public int getMarks()
     {
-        
+        return mark;
     }
     
     /**
+     * method to get final marks.
+     */
+    public int getFinalMarks()
+    {
+        
+        return finalMarks;
+    }
+    
+     /**
      * This will print the course and the code number of the course.
      */
     public void print()
