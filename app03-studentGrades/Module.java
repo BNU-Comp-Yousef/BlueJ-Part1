@@ -14,6 +14,8 @@ public class Module
     private String codeNumber;
     
     private int mark;
+    
+    private int credit;
 
     /**
      * Constructor for objects of class Module. Initialises the variables.
@@ -23,6 +25,17 @@ public class Module
         mark = 0;
         this.title = title;
         this.codeNumber = codeNumber;
+        this.credit = 0;
+    }
+    
+    public int getMark()
+    {
+        return mark;
+    }
+    
+    public int getCredit()
+    {
+        return credit;
     }
     
     /**
@@ -34,6 +47,7 @@ public class Module
         if((mark >= 0 ) && (mark <= 100))
         {
             this.mark = mark;
+            if(mark >= 40) credit = 15;
         }
         else
         {

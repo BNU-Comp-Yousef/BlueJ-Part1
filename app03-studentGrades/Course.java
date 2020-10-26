@@ -21,7 +21,7 @@ public class Course
     
     private int mark;
     
-    private int finalMarks;
+    private int finalMark;
     
     private Grades finalGrade; 
     
@@ -122,18 +122,21 @@ public class Course
   
     }
     
-    public void addFinalMarks(int allMarks)
+    public void calculateFinalMark()
     {
-        finalMarks += allMarks / 4;
+        int total = module1.getMark() + module2.getMark() + module3.getMark()
+            + module4.getMark();
+        
+        finalMark = total / 4; 
         
     }
     
     /**
      * method to get final marks.
      */
-    public int getFinalMarks()
+    public int getFinalMark()
     {
-        return finalMarks;
+        return finalMark;
     }
     
      /**
