@@ -60,6 +60,10 @@ public class Course
         }
     }
     
+    /**
+     * Added a conversion method using if statements to give a grade from 
+     * a percentage.
+     */
     public Grades convertToGrade(int mark)
     {
      if((mark >= 0) && (mark < 40))
