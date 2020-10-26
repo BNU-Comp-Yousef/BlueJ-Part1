@@ -37,6 +37,9 @@ public class Course
     module4 = new Module("Web Design", "WD953");
     }
     
+    /**
+     * made an if statement to add marks depending on which module it is.
+     */
     public void addMarks(int mark, int moduleNumber)
     {
         if(moduleNumber == 1)
