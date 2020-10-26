@@ -1,4 +1,3 @@
-
 /**
  * This course class represents information about the university courses.
  * courses will have a course code and a course title.
@@ -66,7 +65,7 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
-     if((mark >= 0) && (mark < 40))
+      if((mark >= 0) && (mark < 40))
      {
          return Grades.F;
         }
@@ -89,11 +88,20 @@ public class Course
         return Grades.X;
     }
     
+    public void finalGrade()
+    {
+        
+    }
+    
     /**
      * This will print the course and the code number of the course.
      */
     public void print()
     {
         System.out.println("Course: " + title + " " + codeNumber);
+        module1.print();
+        module2.print();
+        module3.print();
+        module4.print();
     }
 }

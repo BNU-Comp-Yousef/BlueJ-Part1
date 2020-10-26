@@ -47,6 +47,6 @@ public class Module
     public void print()
     {
         System.out.println("Module: " + codeNumber + "-"
-                + title + " " + "Mark: " + mark);
+                + title + ". " + "Mark: " + mark);
     }
 }
