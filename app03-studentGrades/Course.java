@@ -12,6 +12,11 @@ public class Course
     private String title;
     
     private String codeNumber;
+    
+    private Module module1;
+    private Module module2;
+    private Module module3;
+    private Module module4;
 
     /**
      * Constructor for objects of class Course
@@ -21,6 +26,11 @@ public class Course
     {
     this.title = title;
     this.codeNumber = codeNumber;
+    
+    module1 = new Module("Application Development", "AD200");
+    module2 = new Module("Programming Concepts", "PC452");
+    module3 = new Module("Data Analysis", "DA101");
+    module4 = new Module("Web Design", "WD953");
     }
     
     /**
