@@ -37,6 +37,7 @@ public class Course
     this.codeNumber = codeNumber;
     this.mark = mark;
     this.credits = 0;
+    this.finalGrade = finalGrade;
     
     module1 = new Module("Application Development", "AD200");
     module2 = new Module("Programming Concepts", "PC452");
@@ -52,19 +53,24 @@ public class Course
         if(moduleNumber == 1)
         {
             module1.awardMark(mark);
+            if (mark >=40) credits += 15;
         }
         else if(moduleNumber == 2)
         {
             module2.awardMark(mark);
+            if (mark >=40) credits += 15;
         }
         else if(moduleNumber == 3)
         {
             module3.awardMark(mark);
+            if (mark >=40) credits += 15;
         }
         else if(moduleNumber == 4)
         {
             module4.awardMark(mark);
+            if (mark >=40) credits += 15;
         }
+        
     }
     
     /**
@@ -73,7 +79,7 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
-       if((mark >= 0) && (mark < 40))
+     if((mark >= 0) && (mark < 40))
      {
          System.out.print("Unlucky, you failed with an F.");
          return Grades.F;
@@ -98,7 +104,7 @@ public class Course
             System.out.print("Congratulations, You got an A.");
             return Grades.A;
         }
-        else if (mark >=40) credits = 15;
+        
         return Grades.X;
     }
     
@@ -108,6 +114,7 @@ public class Course
         return credits;
     }
     
+
 
     /**
      * made a method to calculate the final mark when all 4 modules
@@ -131,7 +138,8 @@ public class Course
     }
     
      /**
-     * This will print the course and the code number of the course.
+     * This will print the course and the code number of the course as
+     * well as the modules.
      */
      public void print()
     {
@@ -141,5 +149,6 @@ public class Course
         module3.print();
         module4.print();
         System.out.println("Final mark: " + finalMark + ".");
+    
     }
 }
