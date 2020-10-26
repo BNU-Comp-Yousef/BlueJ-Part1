@@ -98,30 +98,21 @@ public class Course
             System.out.print("Congratulations, You got an A.");
             return Grades.A;
         }
+        else if (mark >=40) credits = 15;
         return Grades.X;
     }
     
-    public void addCredits(int addedCredits)
-    {
-        if((addedCredits > 0) && (addedCredits <= 15))
-        credits += addedCredits;
-    }
     
-    public int showCredits()
+    public int getCredits()
     {
         return credits;
     }
     
-    public boolean awardCredits(int mark)
-    {
-        if(mark <= 0)
-        {
-            return true;
-        }
-        return false;
-  
-    }
-    
+
+    /**
+     * made a method to calculate the final mark when all 4 modules
+     * are added together.
+     */
     public void calculateFinalMark()
     {
         int total = module1.getMark() + module2.getMark() + module3.getMark()
@@ -149,5 +140,6 @@ public class Course
         module2.print();
         module3.print();
         module4.print();
+        System.out.println("Final mark: " + finalMark + ".");
     }
 }
