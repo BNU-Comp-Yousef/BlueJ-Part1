@@ -1,0 +1,31 @@
+Student student2 = new Student("Zach Neokli", "22011774");
+Course course1 = new Course("Computing", "G400");
+student2.enrollOnCourse(course1);
+course1.addMarks(87, 1);
+course1.addMarks(2222, 2);
+Sorry this mark value is invalid.
+course1.addMarks(75, 2);
+course1.addMarks(98, 3);
+course1.addMarks(63, 4);
+course1.print();
+Course: Computing G400
+Module: AD200-Application Development. Mark: 87
+Module: PC452-Programming Concepts. Mark: 75
+Module: DA101-Data Analysis. Mark: 98
+Module: WD953-Web Design. Mark: 63
+Final mark: 0.
+course1.getCredits()
+    returned int 75
+course1.calculateFinalMark();
+course1.getFinalMark()
+    returned int 80
+course1.convertToGrade(80)
+Congratulations, You got an A.    returned Object A
+Module module1 = new Module("Programming Conceptions", "PC452");
+module1.awardMark(80);
+module1.getMark()
+    returned int 80
+module1.getCredit()
+    returned int 15
+module1.print();
+Module: PC452-Programming Conceptions. Mark: 80
