@@ -24,6 +24,8 @@ public class Course
     private int finalMarks;
     
     private Grades finalGrade; 
+    
+    private int credits;
 
     /**
      * Constructor for objects of class Course
@@ -34,6 +36,7 @@ public class Course
     this.title = title;
     this.codeNumber = codeNumber;
     this.mark = mark;
+    this.credits = 0;
     
     module1 = new Module("Application Development", "AD200");
     module2 = new Module("Programming Concepts", "PC452");
@@ -96,6 +99,16 @@ public class Course
     public int getMarks()
     {
         return mark;
+    }
+    
+    public boolean awardCredits(int mark)
+    {
+        if(mark <= 0)
+        {
+            return true;
+        }
+        return false;
+  
     }
     
     /**
