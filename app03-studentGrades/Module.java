@@ -25,6 +25,10 @@ public class Module
         this.codeNumber = codeNumber;
     }
     
+    /**
+     * Made a method to award marks. Uses an if statement to determine
+     * the correct value.
+     */
     public void awardMark(int mark)
     {
         if((mark >= 0 ) && (mark <= 100))
