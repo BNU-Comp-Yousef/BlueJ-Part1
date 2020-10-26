@@ -73,32 +73,43 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
-      if((mark >= 0) && (mark < 40))
+       if((mark >= 0) && (mark < 40))
      {
+         System.out.print("Unlucky, you failed with an F.");
          return Grades.F;
         }
         else if((mark >= 40) && (mark < 50))
         {
+            System.out.print("You barely passed with a D.");
             return Grades.D;
         }
         else if((mark >= 50) && (mark < 60))
         {
+            System.out.print("Not bad. You got a C.");
             return Grades.C;
         }
         else if((mark >= 60) && (mark < 70))
         {
+            System.out.print("Good job, You got a B.");
             return Grades.B;
         }
         else if((mark >=70) && (mark <= 100))
         {
+            System.out.print("Congratulations, You got an A.");
             return Grades.A;
         }
         return Grades.X;
     }
     
-    public int getMarks()
+    public void addCredits(int addedCredits)
     {
-        return mark;
+        if((addedCredits > 0) && (addedCredits <= 15))
+        credits += addedCredits;
+    }
+    
+    public int showCredits()
+    {
+        return credits;
     }
     
     public boolean awardCredits(int mark)
@@ -111,19 +122,24 @@ public class Course
   
     }
     
+    public void addFinalMarks(int allMarks)
+    {
+        finalMarks += allMarks / 4;
+        
+    }
+    
     /**
      * method to get final marks.
      */
     public int getFinalMarks()
     {
-        
         return finalMarks;
     }
     
      /**
      * This will print the course and the code number of the course.
      */
-    public void print()
+     public void print()
     {
         System.out.println("Course: " + title + " " + codeNumber);
         module1.print();
