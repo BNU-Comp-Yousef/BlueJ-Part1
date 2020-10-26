@@ -1,4 +1,5 @@
 
+
 /**
  * This contains the modules that are specific to the course. In them
  * are the course title, the code for the course and a percentage mark.
@@ -15,7 +16,7 @@ public class Module
     private int mark;
 
     /**
-     * Constructor for objects of class Module
+     * Constructor for objects of class Module. Initialises the variables.
      */
     public Module(String title, String codeNumber)
     {
@@ -23,6 +24,25 @@ public class Module
         this.title = title;
         this.codeNumber = codeNumber;
     }
-
     
+    public void awardMark(int mark)
+    {
+        if((mark >= 0 ) && (mark <= 100))
+        {
+            this.mark = mark;
+        }
+        else
+        {
+            System.out.println("Sorry this mark value is invalid.");
+        }
+    }
+    
+    /**
+     * prints out the information for the module the course needs.
+     */
+    public void print()
+    {
+        System.out.println("Module: " + codeNumber + "-"
+                + title + " " + "Mark: " + mark);
+    }
 }
