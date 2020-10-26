@@ -89,6 +89,6 @@ public class Student
     
     public void enrollOnCourse(Course course)
     {
-        
+        this.course = course;
     }
 }
