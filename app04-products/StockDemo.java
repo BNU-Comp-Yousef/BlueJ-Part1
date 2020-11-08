@@ -5,6 +5,7 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * Modified by Yousef Abobaker.
  */
 public class StockDemo
 {
@@ -18,9 +19,16 @@ public class StockDemo
     public StockDemo()
     {
         manager = new StockManager();
-        manager.addProduct(new Product(132, "Clock Radio"));
-        manager.addProduct(new Product(37,  "Mobile Phone"));
-        manager.addProduct(new Product(23,  "Microwave Oven"));
+        manager.addProduct(new Product(101, "Fifa 21"));
+        manager.addProduct(new Product(102, "COD: Cold War"));
+        manager.addProduct(new Product(103, "Devil May Cry 5"));
+        manager.addProduct(new Product(104, "Rocket League"));
+        manager.addProduct(new Product(105, "Crash Bandicoot"));
+        manager.addProduct(new Product(106, "Uncharted 5"));
+        manager.addProduct(new Product(107, "Demon Souls"));
+        manager.addProduct(new Product(108, "NBA 2k21"));
+        manager.addProduct(new Product(109, "Fallout 6"));
+        manager.addProduct(new Product(110, "Ghost of Tsushima"));
     }
     
     /**
