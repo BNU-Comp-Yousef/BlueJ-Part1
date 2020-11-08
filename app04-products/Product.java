@@ -59,6 +59,11 @@ public class Product
         return id + ": " +  name + " stock level: " + quantity;
     }
 
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+    
     /**
      * Restock with the given amount of this product.
      * The current quantity is incremented by the given amount.
