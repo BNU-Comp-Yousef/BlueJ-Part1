@@ -96,6 +96,8 @@ public class StockManager
                 return product;
             }
         }
+        System.out.println("Product with ID: " + id +
+                " is not recognised.");
         return null;
     }
 
@@ -151,5 +153,21 @@ public class StockManager
             System.out.println();
             System.out.println();
         }
+    }
+    
+    public void printStock()
+    {
+        printHeading();
+        for (Product product : stock)
+        {
+            System.out.println(product);
+        }
+    }
+    
+    public void printHeading()
+    {
+        System.out.println("Ajdabiya's Gaming Junkyard");
+        System.out.println("==========================");
+        System.out.println();
     }
 }
