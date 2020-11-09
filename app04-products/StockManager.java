@@ -159,7 +159,7 @@ public class StockManager
         {
             if (product.getName().contains(productName))
             {
-                return product;
+                System.out.println("Product found: " + product);
             }
             else 
             {
