@@ -1,0 +1,111 @@
+StockManager stockMan1 = new StockManager();
+StockDemo stockDem2 = new StockDemo(stockMan1);
+stockDem2.runDemo();
+101: Playstation: Fifa 21 stock level: 0
+102: Playstation: COD: Cold War stock level: 0
+103: Playstation: Devil May Cry 5 stock level: 0
+104: PC: Rocket League stock level: 0
+105: Xbox: Crash Bandicoot stock level: 0
+106: Xbox: Uncharted 5 stock level: 0
+107: Playstation: Demon Souls stock level: 0
+108: Xbox: NBA 2k21 stock level: 0
+109: PC: Fallout 6 stock level: 0
+110: Playstation: Ghost of Tsushima stock level: 0
+New delivery of products:  101: Playstation: Fifa 21 stock level: 3
+Attempt to restock Playstation: COD: Cold War with a non-positive amount: 0
+New delivery of products:  102: Playstation: COD: Cold War stock level: 0
+New delivery of products:  103: Playstation: Devil May Cry 5 stock level: 6
+New delivery of products:  104: PC: Rocket League stock level: 3
+New delivery of products:  105: Xbox: Crash Bandicoot stock level: 8
+New delivery of products:  106: Xbox: Uncharted 5 stock level: 10
+New delivery of products:  107: Playstation: Demon Souls stock level: 6
+New delivery of products:  108: Xbox: NBA 2k21 stock level: 9
+New delivery of products:  109: PC: Fallout 6 stock level: 5
+New delivery of products:  110: Playstation: Ghost of Tsushima stock level: 7
+101: Playstation: Fifa 21 stock level: 3
+102: Playstation: COD: Cold War stock level: 0
+103: Playstation: Devil May Cry 5 stock level: 6
+104: PC: Rocket League stock level: 3
+105: Xbox: Crash Bandicoot stock level: 8
+106: Xbox: Uncharted 5 stock level: 10
+107: Playstation: Demon Souls stock level: 6
+108: Xbox: NBA 2k21 stock level: 9
+109: PC: Fallout 6 stock level: 5
+110: Playstation: Ghost of Tsushima stock level: 7
+101: Playstation: Fifa 21 stock level: 3
+101: Playstation: Fifa 21 stock level: 2
+102: Playstation: COD: Cold War stock level: 0
+Attempt to sell an out of stock item: Playstation: COD: Cold War
+102: Playstation: COD: Cold War stock level: 0
+103: Playstation: Devil May Cry 5 stock level: 6
+103: Playstation: Devil May Cry 5 stock level: 5
+104: PC: Rocket League stock level: 3
+104: PC: Rocket League stock level: 2
+105: Xbox: Crash Bandicoot stock level: 8
+105: Xbox: Crash Bandicoot stock level: 5
+106: Xbox: Uncharted 5 stock level: 10
+106: Xbox: Uncharted 5 stock level: 7
+107: Playstation: Demon Souls stock level: 6
+107: Playstation: Demon Souls stock level: 3
+108: Xbox: NBA 2k21 stock level: 9
+108: Xbox: NBA 2k21 stock level: 8
+109: PC: Fallout 6 stock level: 5
+109: PC: Fallout 6 stock level: 3
+110: Playstation: Ghost of Tsushima stock level: 7
+110: Playstation: Ghost of Tsushima stock level: 4
+101: Playstation: Fifa 21 stock level: 2
+102: Playstation: COD: Cold War stock level: 0
+103: Playstation: Devil May Cry 5 stock level: 5
+104: PC: Rocket League stock level: 2
+105: Xbox: Crash Bandicoot stock level: 5
+106: Xbox: Uncharted 5 stock level: 7
+107: Playstation: Demon Souls stock level: 3
+108: Xbox: NBA 2k21 stock level: 8
+109: PC: Fallout 6 stock level: 3
+110: Playstation: Ghost of Tsushima stock level: 4
+stockMan1.deliveryOfProducts(102, 12);
+New delivery of products:  102: Playstation: COD: Cold War stock level: 12
+stockMan1.deliveryOfProducts(108, 10);
+New delivery of products:  108: Xbox: NBA 2k21 stock level: 18
+stockMan1.deliveryOfProducts(115, 13);
+Product with ID: 115 is not recognised.
+ERROR, Product ID 115 Not Found.
+stockMan1.sellProduct(108, 10);
+108: Xbox: NBA 2k21 stock level: 18
+108: Xbox: NBA 2k21 stock level: 7
+stockMan1.numberInStock(108);
+Stock remaining: 7
+stockMan1.findByName("Playstation")
+Product found: 101: Playstation: Fifa 21 stock level: 2
+Product found: 102: Playstation: COD: Cold War stock level: 12
+Product found: 103: Playstation: Devil May Cry 5 stock level: 5
+Product name not found.
+Product name not found.
+Product name not found.
+Product found: 107: Playstation: Demon Souls stock level: 3
+Product name not found.
+Product name not found.
+Product found: 110: Playstation: Ghost of Tsushima stock level: 4
+    returned Object null
+stockMan1.printLowStock();
+Products low in stock: 101: Playstation: Fifa 21 stock level: 2
+Products low in stock: 104: PC: Rocket League stock level: 2
+stockMan1.printStock();
+Ajdabiya's Gaming Junkyard
+==========================
+
+101: Playstation: Fifa 21 stock level: 2
+102: Playstation: COD: Cold War stock level: 12
+103: Playstation: Devil May Cry 5 stock level: 5
+104: PC: Rocket League stock level: 2
+105: Xbox: Crash Bandicoot stock level: 5
+106: Xbox: Uncharted 5 stock level: 7
+107: Playstation: Demon Souls stock level: 3
+108: Xbox: NBA 2k21 stock level: 7
+109: PC: Fallout 6 stock level: 3
+110: Playstation: Ghost of Tsushima stock level: 4
+stockMan1.findProduct(102)
+    returned Object <object reference>
+stockMan1.changeProductName(105, "Crash Bandicuot");
+stockMan1.removeProduct(104);
+This product has been removed.
