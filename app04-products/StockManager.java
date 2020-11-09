@@ -187,19 +187,21 @@ public class StockManager
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
-     * match any product, return zero.
+     * match any product, returns an error message.
      * @param id The ID of the product.
      * @return The quantity of the given product in stock.
      */
-    public int numberInStock(int id)
+    public void numberInStock(int id)
     {
         Product product = findProduct(id);
         if (product.getQuantity() > 0)
         {
           System.out.println("Stock remaining: " + product.getQuantity());  
         }
-        System.out.println("No stock left.");
-        return 0;
+        else
+        {
+            System.out.println("No stock left.");
+        }
     }
 
     /**
