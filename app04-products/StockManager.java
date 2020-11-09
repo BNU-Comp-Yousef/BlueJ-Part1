@@ -3,6 +3,9 @@ import java.util.ArrayList;
 /**
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
+ * This class will be used to run most of the stock in the business, it ranges from
+ * finding items to changing their names and selling products.
+ * Products added through an array list.
  * 
  * @author: David J. Barnes and Michael Kölling. 
  * @version: Version 1.1     08/11/2020.
@@ -14,7 +17,7 @@ public class StockManager
     private ArrayList<Product> stock;
 
     /**
-     * Initialise the stock manager.
+     * Constructor to initialise the stock manager.
      */
     public StockManager()
     {
@@ -22,7 +25,7 @@ public class StockManager
     }
 
     /**
-     * Add a product to the list.
+     * Adds a product to the list.
      * @param item The item to be added.
      */
     public void addProduct(Product item)
@@ -44,7 +47,7 @@ public class StockManager
             System.out.println(product.toString());
         }
     }
-    
+
     /**
      * Made a method to remove a product by using the ID number.
      * Returns an error message if ID does not exist.
@@ -64,8 +67,8 @@ public class StockManager
     } 
 
     /**
-     * Sell one of the given item.
-     * Show the before and after status of the product.
+     * Sell one or more of the given item.
+     * Show the before and after status of the product once it is sold.
      * @param id The ID of the product being sold.
      */
     public void sellProduct(int id, int quantity)
@@ -90,7 +93,7 @@ public class StockManager
     }
 
     /**
-     * Receive a delivery of a particular product.
+     * Receives a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
      * @param id The ID of the product.
      * @param amount The amount to increase the quantity by.
@@ -109,10 +112,10 @@ public class StockManager
         }
     }
 
-     /**
-     * Try to find a product in the stock with the given id.
+    /**
+     * Tries to find a product in the stock with the given id.
      * @return The identified product, or null if there is none
-     *         with a matching ID.
+     * with a matching ID as well as error message.
      */
     public Product findProduct(int id)
     {
@@ -127,10 +130,10 @@ public class StockManager
             " is not recognised.");
         return null;
     }
-    
+
     /**
-     * Added a method to change the name of a product and to print if an
-     * incorrect ID number is put in.
+     * Added a method to change the name of a product and to return an
+     * error message if an incorrect ID number is put in.
      */
     public void changeProductName(int id, String replacement)
     {
@@ -145,6 +148,11 @@ public class StockManager
         }
     }
 
+    /**
+     * Made a method to look for a product if it contains the string or 
+     * characters that is entered in the field. Returns an error message
+     * if an incorrect ID is put in.
+     */
     public Product findByName(String productName)
     {
         for (Product product : stock)
@@ -161,6 +169,10 @@ public class StockManager
         return null;
     }
 
+    /**
+     * A method that looks through all products and prints the products that
+     * have a stock level lower than a certain amount. (3)
+     */
     public void printLowStock()
     {
         for (Product stocks : stock) 
@@ -185,7 +197,7 @@ public class StockManager
     }
 
     /**
-     * Print details of all the products.
+     * Print details of all the products. Contains stock level as well as their ID number.
      */
     public void printAllProducts()
     {
@@ -195,6 +207,9 @@ public class StockManager
         }
     }
 
+    /**
+     * Prints all the available products and stock values.
+     */
     public void printStock()
     {
         printHeading();
@@ -204,6 +219,10 @@ public class StockManager
         }
     }
 
+    /**
+     * a method that prints the heading which is implemented in the
+     * print stock method.
+     */
     public void printHeading()
     {
         System.out.println("Ajdabiya's Gaming Junkyard");
