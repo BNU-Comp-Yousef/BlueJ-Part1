@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -11,6 +13,8 @@ public class StockDemo
 {
     // The stock manager.
     private StockManager manager;
+    
+    private Random randomNumGenerator;
 
     /**
      * Create a StockManager and populate it with a few
@@ -19,16 +23,25 @@ public class StockDemo
     public StockDemo(StockManager manager)
     {
         this.manager = manager;
-        manager.addProduct(new Product(101, "Fifa 21"));
-        manager.addProduct(new Product(102, "COD: Cold War"));
-        manager.addProduct(new Product(103, "Devil May Cry 5"));
-        manager.addProduct(new Product(104, "Rocket League"));
-        manager.addProduct(new Product(105, "Crash Bandicoot"));
-        manager.addProduct(new Product(106, "Uncharted 5"));
-        manager.addProduct(new Product(107, "Demon Souls"));
-        manager.addProduct(new Product(108, "NBA 2k21"));
-        manager.addProduct(new Product(109, "Fallout 6"));
-        manager.addProduct(new Product(110, "Ghost of Tsushima"));
+        randomNumGenerator = new Random();
+        
+        manager.addProduct(new Product(101, "Playstation: Fifa 21"));
+        manager.addProduct(new Product(102, "Playstation: COD: Cold War"));
+        manager.addProduct(new Product(103, "Playstation: Devil May Cry 5"));
+        manager.addProduct(new Product(104, "PC: Rocket League"));
+        manager.addProduct(new Product(105, "Xbox: Crash Bandicoot"));
+        manager.addProduct(new Product(106, "Xbox: Uncharted 5"));
+        manager.addProduct(new Product(107, "Playstation: Demon Souls"));
+        manager.addProduct(new Product(108, "Xbox: NBA 2k21"));
+        manager.addProduct(new Product(109, "PC: Fallout 6"));
+        manager.addProduct(new Product(110, "Playstation: Ghost of Tsushima"));
+    }
+    
+    public void runDemo()
+    {
+        manager.printAllProducts();
+        deliveryDemo();
+        manager.printAllProducts();
     }
 
     /**
@@ -36,23 +49,15 @@ public class StockDemo
      * might be used. Details of one product are shown, the
      * product is restocked, and then the details are shown again.
      */
-    public void demo()
+    private void deliveryDemo()
     {
-        // Show details of all of the products.
-        manager.printAllProducts();
-        // Take delivery of 5 items of one of the products.
-        manager.delivery(101, 5);
-        manager.delivery(102, 2);
-        manager.delivery(103, 4);
-        manager.delivery(104, 5);
-        manager.delivery(105, 1);
-        // Take delivery of 10 items of one of the products.
-        manager.delivery(106, 10);
-        manager.delivery(107, 9);
-        manager.delivery(108, 10);
-        manager.delivery(109, 7);
-        manager.delivery(110, 6);
-        manager.printAllProducts();
+        int quantity = 0;
+        
+        for (int id = 101; id <= 110; id++)
+        {
+            quantity = randomNumGenerator.nextInt(11);
+            manager.deliveryOfProducts(id, quantity);
+        }
     }
 
     /**

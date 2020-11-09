@@ -68,7 +68,7 @@ public class StockManager
      * @param id The ID of the product.
      * @param amount The amount to increase the quantity by.
      */
-    public void delivery(int id, int amount)
+    public void deliveryOfProducts(int id, int amount)
     {
         Product product = findProduct(id);
         if (product != null)
@@ -114,6 +114,17 @@ public class StockManager
         }
         return null;
     }
+    
+    public void printLowStock()
+    {
+        for (Product stocks : stock) 
+        {
+            if (stocks.getQuantity() <= 2)
+            {
+                System.out.println("Products low in stock: " + stocks);
+            }
+        }
+    }
 
     /**
      * Locate a product with the given ID, and return how
@@ -134,7 +145,11 @@ public class StockManager
     {
         for (Product product : stock)
         {
-            System.out.println(product);
+            System.out.println();
+            System.out.println("Ajdabiya's Gaming Junkyard");
+            System.out.println("==========================");
+            System.out.println();
+            System.out.println();
         }
     }
 }
