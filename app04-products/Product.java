@@ -1,5 +1,6 @@
 /**
- * Model some details of a product sold by a company.
+ * Model some details of a product sold by a company. Contains 
+ * getters and setters.
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
@@ -59,6 +60,9 @@ public class Product
         return id + ": " +  name + " stock level: " + quantity;
     }
 
+    /**
+     * Setter method to set name.
+     */
     public void setName(String name)
     {
         this.name = name;
