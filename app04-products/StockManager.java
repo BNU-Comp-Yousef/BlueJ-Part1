@@ -44,6 +44,24 @@ public class StockManager
             System.out.println(product.toString());
         }
     }
+    
+    /**
+     * Made a method to remove a product by using the ID number.
+     * Returns an error message if ID does not exist.
+     */
+    public void removeProduct(int id)
+    {
+        Product product = findProduct(id);
+        if(product != null)
+        {
+            stock.remove(product);
+            System.out.println("This product has been removed.");         
+        }
+        else
+        {
+            System.out.println(" This product does not exist.");
+        }
+    } 
 
     /**
      * Sell one of the given item.
@@ -91,7 +109,7 @@ public class StockManager
         }
     }
 
-    /**
+     /**
      * Try to find a product in the stock with the given id.
      * @return The identified product, or null if there is none
      *         with a matching ID.
@@ -108,6 +126,23 @@ public class StockManager
         System.out.println("Product with ID: " + id +
             " is not recognised.");
         return null;
+    }
+    
+    /**
+     * Added a method to change the name of a product and to print if an
+     * incorrect ID number is put in.
+     */
+    public void changeProductName(int id, String replacement)
+    {
+        Product product = findProduct(id);
+        if(product != null)
+        {
+            product.setName(replacement);
+        }
+        else
+        {
+            System.out.println( " The product is not found on the database");
+        }
     }
 
     public Product findByName(String productName)
