@@ -4,6 +4,8 @@ import java.util.Random;
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
  * the StockManager class is completed.
+ * The Stock demo runs from one command from start to finish and shows an example
+ * of products being delievered and sold.
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
