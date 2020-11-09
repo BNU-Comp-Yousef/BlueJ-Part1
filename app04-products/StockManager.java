@@ -193,6 +193,12 @@ public class StockManager
      */
     public int numberInStock(int id)
     {
+        Product product = findProduct(id);
+        if (product.getQuantity() > 0)
+        {
+          System.out.println("Stock remaining: " + product.getQuantity());  
+        }
+        System.out.println("No stock left.");
         return 0;
     }
 
