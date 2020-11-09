@@ -37,6 +37,10 @@ public class StockDemo
         manager.addProduct(new Product(110, "Playstation: Ghost of Tsushima"));
     }
     
+    /**
+     * The main mathod that runs the entire Stock Demo from start to finish 
+     * for efficiency.
+     */
     public void runDemo()
     {
         manager.printAllProducts();
