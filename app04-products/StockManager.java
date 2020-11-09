@@ -29,8 +29,8 @@ public class StockManager
     {
         stock.add(item);
     }
-    
-     /**
+
+    /**
      * Show details of the given product. If found,
      * its name and stock quantity will be shown.
      * @param id The ID of the product to look for.
@@ -38,14 +38,13 @@ public class StockManager
     public void printDetails(int id)
     {
         Product product = findProduct(id);
-        
+
         if(product != null) 
         {
             System.out.println(product.toString());
         }
     }
-    
-    
+
     /**
      * Sell one of the given item.
      * Show the before and after status of the product.
@@ -54,7 +53,7 @@ public class StockManager
     public void sellProduct(int id)
     {
         Product product = findProduct(id);
-        
+
         if(product != null) 
         {
             printDetails(id);
@@ -62,7 +61,7 @@ public class StockManager
             printDetails(id);
         }
     }
-    
+
     /**
      * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
@@ -74,15 +73,15 @@ public class StockManager
         Product product = findProduct(id);
         if (product != null)
         {
-        product.increaseQuantity(amount);
-        System.out.println("New delivery of products: " + " " + product);
+            product.increaseQuantity(amount);
+            System.out.println("New delivery of products: " + " " + product);
+        }
+        else 
+        {
+            System.out.println("ERROR, Product ID " + id + " Not Found.");
+        }
     }
-    else 
-    {
-        System.out.println("ERROR, Product ID " + id + " Not Found.");
-    }
-    }
-    
+
     /**
      * Try to find a product in the stock with the given id.
      * @return The identified product, or null if there is none
@@ -99,7 +98,7 @@ public class StockManager
         }
         return null;
     }
-    
+
     public Product findByName(String productName)
     {
         for (Product product : stock)
@@ -115,7 +114,7 @@ public class StockManager
         }
         return null;
     }
-    
+
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not

@@ -63,7 +63,7 @@ public class Product
     {
         this.name = name;
     }
-    
+
     /**
      * Restock with the given amount of this product.
      * The current quantity is incremented by the given amount.
@@ -79,7 +79,7 @@ public class Product
         else 
         {
             System.out.println("Attempt to restock " + name +
-                               " with a non-positive amount: " + amount);
+                " with a non-positive amount: " + amount);
         }
     }
 

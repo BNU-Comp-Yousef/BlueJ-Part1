@@ -30,7 +30,7 @@ public class StockDemo
         manager.addProduct(new Product(109, "Fallout 6"));
         manager.addProduct(new Product(110, "Ghost of Tsushima"));
     }
-    
+
     /**
      * Provide a very simple demonstration of how a StockManager
      * might be used. Details of one product are shown, the
@@ -54,8 +54,7 @@ public class StockDemo
         manager.delivery(110, 6);
         manager.printAllProducts();
     }
-    
-   
+
     /**
      * Get the product with the given id from the manager.
      * An error message is printed if there is no match.
@@ -65,11 +64,11 @@ public class StockDemo
     public Product getProduct(int id)
     {
         Product product = manager.findProduct(id);
-        
+
         if(product == null) 
         {
             System.out.println("Product with ID: " + id +
-                               " is not recognised.");
+                " is not recognised.");
         }
         return product;
     }
