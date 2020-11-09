@@ -50,14 +50,23 @@ public class StockManager
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void sellProduct(int id)
+    public void sellProduct(int id, int quantity)
     {
         Product product = findProduct(id);
 
         if(product != null) 
         {
+            if (quantity > product.getQuantity())
+            {
+                quantity = product.getQuantity();
+            }
             printDetails(id);
-            product.sellOne();
+
+            for (int count = 0; count <= quantity; count++)
+            {
+                product.sellOne();
+            }
+
             printDetails(id);
         }
     }
@@ -97,7 +106,7 @@ public class StockManager
             }
         }
         System.out.println("Product with ID: " + id +
-                " is not recognised.");
+            " is not recognised.");
         return null;
     }
 
@@ -116,7 +125,7 @@ public class StockManager
         }
         return null;
     }
-    
+
     public void printLowStock()
     {
         for (Product stocks : stock) 
@@ -147,14 +156,10 @@ public class StockManager
     {
         for (Product product : stock)
         {
-            System.out.println();
-            System.out.println("Ajdabiya's Gaming Junkyard");
-            System.out.println("==========================");
-            System.out.println();
-            System.out.println();
+            System.out.println(product);
         }
     }
-    
+
     public void printStock()
     {
         printHeading();
@@ -163,7 +168,7 @@ public class StockManager
             System.out.println(product);
         }
     }
-    
+
     public void printHeading()
     {
         System.out.println("Ajdabiya's Gaming Junkyard");
