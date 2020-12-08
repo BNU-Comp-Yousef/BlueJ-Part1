@@ -15,7 +15,7 @@ public class StockApp
     public static final String QUIT = "quit";
     public static final String ADD = "add";
 
-    public final int FIRST_ID = 200;
+    public final int FIRST_ID = 111;
     
     
     private StockManager manager;
