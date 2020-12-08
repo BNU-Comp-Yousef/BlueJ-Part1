@@ -33,6 +33,15 @@ public class StockManager
         stock.add(item);
     }
 
+    public void restock()
+    {
+        for (Product product : stock)
+        {
+            if (product.getQuantity() <= 5)
+              stock.get(product.getID()).increaseQuantity(5);
+        }
+    }
+    
     /**
      * Show details of the given product. If found,
      * its name and stock quantity will be shown.
@@ -42,7 +51,7 @@ public class StockManager
     {
         Product product = findProduct(id);
 
-        if(product != null) 
+        if (product != null) 
         {
             System.out.println(product.toString());
         }
@@ -92,6 +101,11 @@ public class StockManager
         }
     }
 
+    public void sellQuantity (int id)
+    {
+        stock.get(id).sellOne();
+    }
+    
     /**
      * Receives a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
@@ -169,6 +183,19 @@ public class StockManager
         return null;
     }
 
+    public void displaylowstock()
+    {
+        int count = 0;
+        while (stock.size() > count) {
+            int stocklevel = stock.get(count).getQuantity();
+            if (stocklevel < 5) 
+            {
+                System.out.println (stock.toString());
+            }
+            count++;
+        }
+    }
+
     /**
      * A method that looks through all products and prints the products that
      * have a stock level lower than a certain amount. (3)
@@ -196,7 +223,7 @@ public class StockManager
         Product product = findProduct(id);
         if (product.getQuantity() > 0)
         {
-          System.out.println("Stock remaining: " + product.getQuantity());  
+            System.out.println("Stock remaining: " + product.getQuantity());  
         }
         else
         {
