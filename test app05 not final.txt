@@ -1,0 +1,199 @@
+    Remove:     Remove an old product
+    Sell:       Sell quantity of product
+    Deliver:    Deliver quantity of product
+    Low Stock:  Stock is low
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> PrintAll
+101: Playstation: Fifa 21 stock level: 0
+102: Playstation: COD: Cold War stock level: 0
+103: Playstation: Devil May Cry 5 stock level: 0
+104: PC: Rocket League stock level: 0
+105: Xbox: Crash Bandicoot stock level: 0
+106: Xbox: Uncharted 5 stock level: 0
+107: Playstation: Demon Souls stock level: 0
+108: Xbox: NBA 2k21 stock level: 0
+109: PC: Fallout 6 stock level: 0
+110: Playstation: Ghost of Tsushima stock level: 0
+111: Uncharted 6 stock level: 0
+112: Crash Bandicoot 2 stock level: 0
+114: Dark Souls stock level: 0
+115: Genshin Impale stock level: 0
+116:  stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Yousef Abobaker
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell quantity of product
+    Deliver:    Deliver quantity of product
+    Low Stock:  Stock is low
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Deliver
+Deliver quantity of Product
+
+Please enter ID of product
+> 112
+Please enter amount of product
+> 8
+New delivery of products:  112: Crash Bandicoot 2 stock level: 8
+
+Added 8 product to stock
+******************************
+ Stock Management Application 
+    App05: by Yousef Abobaker
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell quantity of product
+    Deliver:    Deliver quantity of product
+    Low Stock:  Stock is low
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Deliver
+Deliver quantity of Product
+
+Please enter ID of product
+> 112
+Please enter amount of product
+> -4
+Attempt to restock Crash Bandicoot 2 with a non-positive amount: -4
+New delivery of products:  112: Crash Bandicoot 2 stock level: 8
+
+Added -4 product to stock
+******************************
+ Stock Management Application 
+    App05: by Yousef Abobaker
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell quantity of product
+    Deliver:    Deliver quantity of product
+    Low Stock:  Stock is low
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Sell
+******************************
+ Stock Management Application 
+    App05: by Yousef Abobaker
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell quantity of product
+    Deliver:    Deliver quantity of product
+    Low Stock:  Stock is low
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> sell
+******************************
+ Stock Management Application 
+    App05: by Yousef Abobaker
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell quantity of product
+    Deliver:    Deliver quantity of product
+    Low Stock:  Stock is low
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Sell
+******************************
+ Stock Management Application 
+    App05: by Yousef Abobaker
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell quantity of product
+    Deliver:    Deliver quantity of product
+    Low Stock:  Stock is low
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Low Stock
+The product stock is low 
+
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+[101: Playstation: Fifa 21 stock level: 0, 102: Playstation: COD: Cold War stock level: 0, 103: Playstation: Devil May Cry 5 stock level: 0, 104: PC: Rocket League stock level: 0, 105: Xbox: Crash Bandicoot stock level: 0, 106: Xbox: Uncharted 5 stock level: 0, 107: Playstation: Demon Souls stock level: 0, 108: Xbox: NBA 2k21 stock level: 0, 109: PC: Fallout 6 stock level: 0, 110: Playstation: Ghost of Tsushima stock level: 0, 111: Uncharted 6 stock level: 0, 112: Crash Bandicoot 2 stock level: 8, 114: Dark Souls stock level: 0, 115: Genshin Impale stock level: 0, 116:  stock level: 0]
+******************************
+ Stock Management Application 
+    App05: by Yousef Abobaker
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell quantity of product
+    Deliver:    Deliver quantity of product
+    Low Stock:  Stock is low
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Sell
+******************************
+ Stock Management Application 
+    App05: by Yousef Abobaker
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell quantity of product
+    Deliver:    Deliver quantity of product
+    Low Stock:  Stock is low
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> SELL
+******************************
+ Stock Management Application 
+    App05: by Yousef Abobaker
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell quantity of product
+    Deliver:    Deliver quantity of product
+    Low Stock:  Stock is low
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> sell
+******************************
+ Stock Management Application 
+    App05: by Yousef Abobaker
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell quantity of product
+    Deliver:    Deliver quantity of product
+    Low Stock:  Stock is low
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> quit
+> QUIT
